@@ -15,9 +15,11 @@ namespace Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public string Fname { get; set; }
+        [Column("Fname")]
+        public string FirstName { get; set; }
         [Required]
-        public string Lname { get; set; }
+        [Column("Lname")]
+        public string LastName { get; set; }
         public int Age { get; set; }
         public GenderEnum Gender { get; set; }
         public int Rate { get; set; }
