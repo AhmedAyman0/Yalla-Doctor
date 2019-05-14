@@ -17,10 +17,13 @@ namespace Models
         [Required]
         [Column("Fname")]
         public string FirstName { get; set; }
+        public string UserName { get; set; }
         [Required]
         [Column("Lname")]
         public string LastName { get; set; }
         public int Age { get; set; }
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
         public GenderEnum Gender { get; set; }
         public int Rate { get; set; }
         public string Image { get; set; }

@@ -4,9 +4,9 @@ using System;
 
 namespace DAL
 {
-    public class Context:DbContext
+    public class YContext:DbContext
     {
-        public Context(DbContextOptions options):base(options)
+        public YContext(DbContextOptions options):base(options)
         {
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
